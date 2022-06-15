@@ -375,18 +375,6 @@ btnSort.addEventListener('click', function (e) {
   displayMov(currentAcc);
 });
 
-labelBalance.addEventListener('click', function () {
-  [...document.querySelectorAll('.movements__row')].forEach((row, i) => {
-    console.log(i);
-    if (i % 2 == 0) {
-      row.style.background = 'yellow';
-    }
-    if (i % 3 == 0) {
-      row.style.background = 'purple';
-    }
-  });
-});
-
 console.log(
   new Intl.NumberFormat(navigator.language, {
     style: 'currency',
